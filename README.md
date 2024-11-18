@@ -80,10 +80,3 @@ Ensure the following are installed on your system:
 - **DELETE /api/todos/:id**: Delete a todo by ID.
 
 
-## SCREENSHOTS
-
-![Screenshot (38)](https://github.com/user-attachments/assets/ab0044ad-2d0b-4847-a05b-ac02b705b81e)
-![Screenshot (40)](https://github.com/user![Screenshot (40)](https://github.com/user-attachments/assets/0033f05f-2f44-4019-b2df-cdc3949fbc72)
--attachments/assets/5099ba42-f72e-4080-9727-99c51f597447)
-![Screenshot (39)](https://github.com/user-attachments/assets/5df3358d-b9c5-41a5-b3b5-8db897745b1c)
-
