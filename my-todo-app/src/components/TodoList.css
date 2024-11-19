@@ -1,0 +1,204 @@
+body {
+    background: linear-gradient(to bottom right, #6420f6, #bba7e0, #9072c7); /* Three-shade gradient */
+    background-size: 500% 500%; /* Smooth gradient transitions */
+    animation: gradientAnimation 5s ease infinite; /* Dynamic background */
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.todo-page {
+    max-width: 1150px;
+    margin: 100px;
+    padding-top: 5px;
+}
+
+.card {
+    transition: transform 0.2s, box-shadow 0.3s; /* Smooth scaling and shadow effect */
+}
+
+.card:hover {
+    transform: scale(1.02); /* Slightly enlarges the card on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow on hover */
+}
+
+input.form-control {
+    margin-right: 10px;
+    border-radius: 8px; /* Slightly rounded input fields */
+    
+}
+
+.completed .card-title {
+    opacity: 0.8; /* Make completed tasks a bit lighter */
+    text-decoration: line-through; /* Strikethrough for completed tasks */
+}
+
+.light {
+    background-color: #e2f0d9 !important; /* Light green for low priority */
+}
+
+.warning {
+    background-color: #fff3cd !important; /* Light yellow for medium priority */
+}
+
+.danger {
+    background-color: #f8d7da !important; /* Light red for high priority */
+}
+
+.card-title {
+    font-weight: bold;
+    color: #3d3d3d; /* Darker text for better readability */
+}
+
+.card-text {
+    margin-bottom: 10px;
+    color: #595959; /* Subtle text color */
+}
+
+button {
+    background-color: #a87dc2; /* Light purple button */
+    border: none;
+    color: white; /* White text on button */
+    border-radius: 5px; /* Rounded button edges */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth color change and scaling */
+}
+
+button:hover {
+    background-color: #9663a3; /* Darker purple on hover */
+    transform: scale(1.05); /* Slight button enlargement on hover */
+}
+
+.modal-content {
+    border-radius: 10px; /* Rounded modal corners */
+    background-color: #f3f0f9; /* Light background for the modal */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Modal shadow */
+}
+
+.modal-header {
+    border-bottom: none; /* No border under the modal header */
+}
+
+.modal-title {
+    color: #5a4d79; /* Subtle purple title */
+}
+
+.btn-close {
+    color: #a87dc2; /* Close button color */
+}
+
+.modal-footer .btn {
+    background-color: #a87dc2; /* Button color for the modal */
+    border: none;
+}
+
+.modal-footer .btn:hover {
+    background-color: #9663a3; /* Darker purple on hover */
+}
+
+input[type="text"], input[type="password"], select {
+    border: 1px solid #ccc; /* Light border around input fields */
+    padding: 10px;
+    font-size: 1em;
+    width: 100%;
+    border-radius: 5px; /* Rounded inputs */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for input fields */
+}
+
+textarea {
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.modal-body {
+    padding: 20px;
+    background-color: #f7f7f7; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.modal-body .form-label {
+    font-weight: bold;
+    color: #6a1b9a; /* Accent color for labels */
+}
+
+.modal-body input.form-control, 
+.modal-body select.form-control {
+    margin-bottom: 15px; /* Space between input fields */
+    border-radius: 6px; /* Slightly rounded input fields */
+    border: 1px solid #ddd; /* Light border for inputs */
+    padding: 10px;
+}
+
+.modal-body input.form-control:focus,
+.modal-body select.form-control:focus {
+    border-color: #6a1b9a; /* Matching border color on focus */
+    box-shadow: 0 0 5px rgba(106, 27, 154, 0.3); /* Subtle glow */
+}
+
+.modal-body label {
+    font-weight: bold;
+    color: #050404;
+    margin: 10px;
+}
+
+.modal-body input, .modal-body select {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: #e7d8ea;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.card:hover button {
+    background-color: #9663a3; /* Maintain button hover color */
+}
+
+/* New styles for priority headings */
+h5 {
+    text-align: center;
+    margin: 20px 0;
+    font-weight: bold;
+    color: #000000; /* Color for headings */
+}
+
+.card-header {
+    background-color: #f1f1f1; /* Light background for headers */
+    border-bottom: 2px solid #6a1b9a; /* Accent border */
+    border-radius: 5px 5px 0 0; /* Rounded top corners */
+}
+
+.priority-divider {
+    width: 100%; /* Set the desired width (e.g., 80% of the parent container) */
+    margin: 10 auto; /* Center the line */
+    border: 1px solid #000000; /* Color and thickness of the line */
+}
+
+label.form-label{
+    font-size: large;
+    font-weight: 500;
+    margin: auto;
+    margin-right: 15px;
+}
+.priority-heading {
+    text-align: center; /* Center the text */
+    margin: 20px 0; /* Space above and below the heading */
+    font-weight: bold; /* Make the heading bold */
+    color: #000000; /* Accent color for headings */
+    font-size: 1.5em; /* Increase the font size */
+    text-transform: uppercase; /* Make text uppercase */
+}
